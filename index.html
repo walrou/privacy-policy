@@ -7,113 +7,172 @@
   <title>privacy policy - wr ai chat</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=roboto+slab&display=swap');
+    
+    /* dynamic gradient background animation */
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
     body {
       font-family: 'roboto slab', serif;
-      background-color: #f9faff;
-      color: #2c3e50;
+      background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a00, #ee0979);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #f0f0f0;
       margin: 50px auto;
       max-width: 900px;
       line-height: 1.9;
       font-size: 17px;
       text-transform: lowercase;
       padding: 0 20px;
+      box-sizing: border-box;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+    
     h1, h2, h3 {
-      color: #34495e;
+      color: #e0e0e0;
       margin-top: 60px;
       margin-bottom: 20px;
       text-transform: lowercase;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
     }
+    
     p {
       margin-bottom: 28px;
       letter-spacing: 0.02em;
+      text-shadow: 0 0 3px rgba(0,0,0,0.3);
     }
+    
     ul {
       margin-left: 25px;
       margin-bottom: 30px;
     }
+    
     li {
       margin-bottom: 12px;
     }
+    
     a {
-      color: #2980b9;
+      color: #ffdd57;
       text-decoration: none;
       word-break: break-all;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba(0,0,0,0.4);
     }
+    
     a:hover {
       text-decoration: underline;
     }
+    
     footer {
       margin-top: 80px;
-      font-size: 14px;
-      color: #7f8c8d;
+      font-size: 16px;
+      color: #ffeaa7;
       text-align: center;
       letter-spacing: 0.03em;
+      text-shadow: 0 0 6px rgba(0,0,0,0.5);
+    }
+    
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 18px;
+    }
+    
+    .social-links a {
+      color: #ffeaa7;
+      font-weight: 700;
+      text-shadow: 0 0 4px rgba(0,0,0,0.6);
+      transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: #ffd700;
     }
   </style>
 </head>
 <body>
-  <h1>privacy policy</h1>
+  <main>
+    <h1>privacy policy</h1>
 
-  <p>this privacy policy explains how wr ai chat collects, uses, and protects your personal information when you use our application. our goal is to maintain transparency and ensure your privacy rights are respected at all times.</p>
+    <p>this privacy policy explains how wr ai chat collects, uses, and protects your personal information when you use our application. our goal is to maintain transparency and ensure your privacy rights are respected at all times.</p>
 
-  <h2>1. information we collect</h2>
-  <p>we may collect various types of information to provide and improve our services, including but not limited to:</p>
-  <ul>
-    <li>personal identifiers such as your name, email address, and google account details.</li>
-    <li>usage data including app activity, timestamps, and feature interactions.</li>
-    <li>technical information like device type, ip address, and location (only with your permission).</li>
-    <li>cookies and similar technologies to enhance user experience.</li>
-  </ul>
+    <h2>1. information we collect</h2>
+    <p>we may collect various types of information to provide and improve our services, including but not limited to:</p>
+    <ul>
+      <li>personal identifiers such as your name, email address, and google account details.</li>
+      <li>usage data including app activity, timestamps, and feature interactions.</li>
+      <li>technical information like device type, ip address, and location (only with your permission).</li>
+      <li>cookies and similar technologies to enhance user experience.</li>
+    </ul>
 
-  <h2>2. how we use your information</h2>
-  <p>the information collected is used strictly for purposes including:</p>
-  <ul>
-    <li>providing and maintaining our services effectively.</li>
-    <li>personalizing your experience within the app.</li>
-    <li>preventing fraud and enhancing security.</li>
-    <li>responding to your inquiries and providing support.</li>
-    <li>complying with legal obligations and protecting rights.</li>
-  </ul>
+    <h2>2. how we use your information</h2>
+    <p>the information collected is used strictly for purposes including:</p>
+    <ul>
+      <li>providing and maintaining our services effectively.</li>
+      <li>personalizing your experience within the app.</li>
+      <li>preventing fraud and enhancing security.</li>
+      <li>responding to your inquiries and providing support.</li>
+      <li>complying with legal obligations and protecting rights.</li>
+    </ul>
 
-  <h2>3. sharing your information</h2>
-  <p>we do not share your personal data with third parties except in the following cases:</p>
-  <ul>
-    <li>with your explicit consent.</li>
-    <li>when required by law or legal process.</li>
-    <li>with trusted service providers who assist us in delivering the app, under strict confidentiality agreements.</li>
-  </ul>
-  <p>we ensure our partners comply with stringent privacy standards and oversee data protection carefully.</p>
+    <h2>3. sharing your information</h2>
+    <p>we do not share your personal data with third parties except in the following cases:</p>
+    <ul>
+      <li>with your explicit consent.</li>
+      <li>when required by law or legal process.</li>
+      <li>with trusted service providers who assist us in delivering the app, under strict confidentiality agreements.</li>
+    </ul>
+    <p>we ensure our partners comply with stringent privacy standards and oversee data protection carefully.</p>
 
-  <h2>4. data retention</h2>
-  <p>your data will be retained only as long as necessary to fulfill the purposes described in this policy. after that, data will be securely deleted or anonymized to protect your privacy.</p>
+    <h2>4. data retention</h2>
+    <p>your data will be retained only as long as necessary to fulfill the purposes described in this policy. after that, data will be securely deleted or anonymized to protect your privacy.</p>
 
-  <h2>5. your rights</h2>
-  <p>you have the right to:</p>
-  <ul>
-    <li>access and review your personal information.</li>
-    <li>request corrections or deletions.</li>
-    <li>limit or withdraw consent for data processing.</li>
-    <li>file complaints related to privacy concerns.</li>
-  </ul>
-  <p>please contact us anytime to exercise these rights or for any privacy-related inquiries.</p>
+    <h2>5. your rights</h2>
+    <p>you have the right to:</p>
+    <ul>
+      <li>access and review your personal information.</li>
+      <li>request corrections or deletions.</li>
+      <li>limit or withdraw consent for data processing.</li>
+      <li>file complaints related to privacy concerns.</li>
+    </ul>
+    <p>please contact us anytime to exercise these rights or for any privacy-related inquiries.</p>
 
-  <h2>6. security measures</h2>
-  <p>we implement industry-standard technical and organizational measures to protect your data from unauthorized access, alteration, or loss. encryption and access control are rigorously applied.</p>
+    <h2>6. security measures</h2>
+    <p>we implement industry-standard technical and organizational measures to protect your data from unauthorized access, alteration, or loss. encryption and access control are rigorously applied.</p>
 
-  <h2>7. cookies</h2>
-  <p>cookies are used to enhance your experience by remembering preferences and optimizing app functionality. you can disable cookies in your browser settings, but some features may not work properly.</p>
+    <h2>7. cookies</h2>
+    <p>cookies are used to enhance your experience by remembering preferences and optimizing app functionality. you can disable cookies in your browser settings, but some features may not work properly.</p>
 
-  <h2>8. minors</h2>
-  <p>wr ai chat does not knowingly collect personal information from children under 13 years old. if you believe we have inadvertently collected such data, please contact us immediately for prompt removal.</p>
+    <h2>8. minors</h2>
+    <p>wr ai chat does not knowingly collect personal information from children under 13 years old. if you believe we have inadvertently collected such data, please contact us immediately for prompt removal.</p>
 
-  <h2>9. changes to this policy</h2>
-  <p>we may update this privacy policy from time to time to reflect changes in our practices or legal requirements. significant changes will be communicated via the app or official channels.</p>
+    <h2>9. changes to this policy</h2>
+    <p>we may update this privacy policy from time to time to reflect changes in our practices or legal requirements. significant changes will be communicated via the app or official channels.</p>
 
-  <h2>10. contact us</h2>
-  <p>for questions or concerns about this privacy policy, please reach out at:</p>
-  <p>email: support@wraichat.example</p>
-  <p>website: <a href="https://www.wraichat.example" target="_blank" rel="noopener noreferrer">https://www.wraichat.example</a></p>
+    <h2>10. contact us</h2>
+    <p>for questions or concerns about this privacy policy, please reach out at:</p>
+    <p>email: support@wraichat.example</p>
+    <p>website: <a href="https://www.wraichat.example" target="_blank" rel="noopener noreferrer">https://www.wraichat.example</a></p>
+  </main>
+
+  <section class="social-links" aria-label="social media accounts">
+    <a href="https://www.facebook.com/walid.rouibah.524840" target="_blank" rel="noopener noreferrer" aria-label="facebook - walid rouibah">facebook</a>
+    <a href="https://www.instagram.com/wal_rou?igsh=MXVkN2Q3ZWF6dmphMg==" target="_blank" rel="noopener noreferrer" aria-label="instagram - wal_rou">instagram</a>
+  </section>
 
   <footer>
     &copy; 2025 wr ai chat. all rights reserved.
